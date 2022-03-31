@@ -10,7 +10,7 @@ import java.util.List;
 @RequestMapping("genre")
 public class GenreController {
 
-    GenreRepository genreRepository;
+    private final GenreRepository genreRepository;
 
     public GenreController(GenreRepository genreRepository) {
         this.genreRepository = genreRepository;
