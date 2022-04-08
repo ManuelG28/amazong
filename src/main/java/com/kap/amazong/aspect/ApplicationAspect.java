@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 @Aspect
 @Configuration
 public class ApplicationAspect {
-    Logger logger = LoggerFactory.getLogger(ApplicationAspect.class);
+    private final Logger logger = LoggerFactory.getLogger(ApplicationAspect.class);
 
     @Before("com.kap.amazong.aspect.CommonAspectConfiguration.businessLayerExecution()")
     public void beforeMusicExecution(JoinPoint joinPoint){
